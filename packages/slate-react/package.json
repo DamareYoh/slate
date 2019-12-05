@@ -15,7 +15,7 @@
     "lib/"
   ],
   "scripts": {
-    "generate:typedoc": "rimraf ../../docs/api/slate-react && typedoc --options typedoc.js"
+    "generate:typedoc": "typedoc --options typedoc.js"
   },
   "dependencies": {
     "@types/debounce": "^1.2.0",
