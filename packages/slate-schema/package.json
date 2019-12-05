@@ -14,6 +14,9 @@
     "dist/",
     "lib/"
   ],
+  "scripts": {
+    "generate:typedoc": "rimraf ../../docs/api/slate-schema && typedoc --options typedoc.js"
+  },
   "devDependencies": {
     "slate": "^0.50.0",
     "slate-hyperscript": "^0.50.0"

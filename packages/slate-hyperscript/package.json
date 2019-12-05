@@ -14,6 +14,9 @@
     "dist/",
     "lib/"
   ],
+  "scripts": {
+    "generate:typedoc": "rimraf ../../docs/api/slate-hyperscript && typedoc --options typedoc.js"
+  },
   "dependencies": {
     "is-plain-object": "^3.0.0"
   },

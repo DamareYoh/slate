@@ -14,6 +14,9 @@
     "dist/",
     "lib/"
   ],
+  "scripts": {
+    "generate:typedoc": "rimraf ../../docs/api/slate-schema && typedoc --options typedoc.js"
+  },
   "dependencies": {
     "@types/esrever": "^0.2.0",
     "esrever": "^0.2.0",

@@ -6,5 +6,8 @@
     { "path": "./packages/slate-hyperscript" },
     { "path": "./packages/slate-react" },
     { "path": "./packages/slate-schema" }
-  ]
+  ],
+  "typedocOptions": {
+      "mode": "modules"
+  }
 }

@@ -8,3 +8,4 @@ node_modules/
 packages/*/yarn.lock
 site/out/
 tmp/
+docs/api

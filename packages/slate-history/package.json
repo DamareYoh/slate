@@ -14,6 +14,9 @@
     "dist/",
     "lib/"
   ],
+  "scripts": {
+    "generate:typedoc": "rimraf ../../docs/api/slate-history && typedoc --options typedoc.js"
+  },
   "dependencies": {
     "immer": "^5.0.0",
     "is-plain-object": "^3.0.0"
