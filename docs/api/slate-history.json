@@ -1,0 +1,1670 @@
+{
+	"id": 0,
+	"name": "slate-history",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 16,
+			"name": "History",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {
+				"shortText": "`History` objects hold all of the operations that are applied to a value, so\nthey can be undone or redone as necessary."
+			},
+			"children": [
+				{
+					"id": 17,
+					"name": "redos",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate-history/src/history.ts",
+							"line": 10,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "Operation"
+							}
+						}
+					}
+				},
+				{
+					"id": 18,
+					"name": "undos",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate-history/src/history.ts",
+							"line": 11,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "array",
+							"elementType": {
+								"type": "reference",
+								"name": "Operation"
+							}
+						}
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						17,
+						18
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "slate-history/src/history.ts",
+					"line": 9,
+					"character": 24
+				}
+			]
+		},
+		{
+			"id": 23,
+			"name": "HistoryEditor",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"comment": {
+				"shortText": "`HistoryEditor` contains helpers for history-enabled editors."
+			},
+			"indexSignature": [
+				{
+					"id": 53,
+					"name": "__index",
+					"kind": 8192,
+					"kindString": "Index signature",
+					"flags": {},
+					"comment": {
+						"shortText": "`HistoryEditor` contains helpers for history-enabled editors."
+					},
+					"parameters": [
+						{
+							"id": 54,
+							"name": "key",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 55,
+					"name": "Editor",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 18,
+							"character": 27
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 56,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "slate/lib/interfaces/editor/index.d.ts",
+									"line": 18,
+									"character": 28
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 25,
+					"name": "apply",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 7,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 26,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 27,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 28,
+											"name": "operation",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "Operation"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "slate/lib/interfaces/editor/index.d.ts",
+									"line": 7,
+									"character": 10
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.apply"
+					}
+				},
+				{
+					"id": 29,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 8,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Node"
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.children"
+					}
+				},
+				{
+					"id": 30,
+					"name": "exec",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 9,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 31,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 32,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 33,
+											"name": "command",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "Command"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "slate/lib/interfaces/editor/index.d.ts",
+									"line": 9,
+									"character": 9
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.exec"
+					}
+				},
+				{
+					"id": 24,
+					"name": "history",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-editor.ts",
+							"line": 17,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "History",
+						"id": 16
+					}
+				},
+				{
+					"id": 34,
+					"name": "isInline",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 10,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 35,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 36,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 37,
+											"name": "element",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "Element"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "slate/lib/interfaces/editor/index.d.ts",
+									"line": 10,
+									"character": 13
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.isInline"
+					}
+				},
+				{
+					"id": 38,
+					"name": "isVoid",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 11,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 39,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 40,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 41,
+											"name": "element",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "Element"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "slate/lib/interfaces/editor/index.d.ts",
+									"line": 11,
+									"character": 11
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.isVoid"
+					}
+				},
+				{
+					"id": 42,
+					"name": "normalizeNode",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 12,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 43,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 44,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 45,
+											"name": "entry",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "NodeEntry"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "slate/lib/interfaces/editor/index.d.ts",
+									"line": 12,
+									"character": 18
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.normalizeNode"
+					}
+				},
+				{
+					"id": 46,
+					"name": "onChange",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 13,
+							"character": 12
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 47,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 48,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 49,
+											"name": "children",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "Node"
+												}
+											}
+										},
+										{
+											"id": 50,
+											"name": "operations",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "reference",
+													"name": "Operation"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "slate/lib/interfaces/editor/index.d.ts",
+									"line": 13,
+									"character": 13
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.onChange"
+					}
+				},
+				{
+					"id": 51,
+					"name": "operations",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 14,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Operation"
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.operations"
+					}
+				},
+				{
+					"id": 52,
+					"name": "selection",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate/lib/interfaces/editor/index.d.ts",
+							"line": 15,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"name": "Range"
+							},
+							{
+								"type": "intrinsic",
+								"name": "null"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"name": "Editor.selection"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						55,
+						25,
+						29,
+						30,
+						24,
+						34,
+						38,
+						42,
+						46,
+						51,
+						52
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-editor.ts",
+					"line": 16,
+					"character": 30
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"name": "Editor"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "RedoCommand",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 2,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-command.ts",
+							"line": 4,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "redo"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-command.ts",
+					"line": 3,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "UndoCommand",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 4,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-command.ts",
+							"line": 8,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "undo"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						4
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-command.ts",
+					"line": 7,
+					"character": 28
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "HistoryCommand",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {
+				"isExported": true
+			},
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-command.ts",
+					"line": 11,
+					"character": 26
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "reference",
+						"name": "RedoCommand",
+						"id": 1
+					},
+					{
+						"type": "reference",
+						"name": "UndoCommand",
+						"id": 3
+					}
+				]
+			}
+		},
+		{
+			"id": 57,
+			"name": "HISTORY",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "Weakmaps for attaching state to the editor."
+			},
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-editor.ts",
+					"line": 8,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "WeakMap",
+				"typeArguments": [
+					{
+						"type": "reference",
+						"name": "Editor"
+					},
+					{
+						"type": "reference",
+						"name": "History",
+						"id": 16
+					}
+				]
+			},
+			"defaultValue": " new WeakMap<Editor, History>()"
+		},
+		{
+			"id": 59,
+			"name": "MERGING",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-editor.ts",
+					"line": 10,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "WeakMap",
+				"typeArguments": [
+					{
+						"type": "reference",
+						"name": "Editor"
+					},
+					{
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				]
+			},
+			"defaultValue": " new WeakMap<Editor, boolean | undefined>()"
+		},
+		{
+			"id": 58,
+			"name": "SAVING",
+			"kind": 32,
+			"kindString": "Variable",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-editor.ts",
+					"line": 9,
+					"character": 19
+				}
+			],
+			"type": {
+				"type": "reference",
+				"name": "WeakMap",
+				"typeArguments": [
+					{
+						"type": "reference",
+						"name": "Editor"
+					},
+					{
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "false"
+							},
+							{
+								"type": "intrinsic",
+								"name": "true"
+							}
+						]
+					}
+				]
+			},
+			"defaultValue": " new WeakMap<Editor, boolean | undefined>()"
+		},
+		{
+			"id": 82,
+			"name": "withHistory",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"comment": {
+				"shortText": "The `withHistory` plugin keeps track of the operation history of a Slate\neditor as operations are applied to it, using undo and redo stacks."
+			},
+			"signatures": [
+				{
+					"id": 83,
+					"name": "withHistory",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"shortText": "The `withHistory` plugin keeps track of the operation history of a Slate\neditor as operations are applied to it, using undo and redo stacks."
+					},
+					"parameters": [
+						{
+							"id": 84,
+							"name": "editor",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Editor"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Editor"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "slate-history/src/with-history.ts",
+					"line": 11,
+					"character": 24
+				}
+			]
+		},
+		{
+			"id": 19,
+			"name": "History",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 20,
+					"name": "isHistory",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 21,
+							"name": "isHistory",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Check if a value is a `History` object."
+							},
+							"parameters": [
+								{
+									"id": 22,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "value",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"name": "History"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history.ts",
+							"line": 19,
+							"character": 11
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						20
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "slate-history/src/history.ts",
+					"line": 14,
+					"character": 20
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		},
+		{
+			"id": 6,
+			"name": "HistoryCommand",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 7,
+					"name": "isHistoryCommand",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 8,
+							"name": "isHistoryCommand",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Check if a value is a `HistoryCommand` object."
+							},
+							"parameters": [
+								{
+									"id": 9,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "value",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"name": "HistoryCommand"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-command.ts",
+							"line": 18,
+							"character": 18
+						}
+					]
+				},
+				{
+					"id": 10,
+					"name": "isRedoCommand",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 11,
+							"name": "isRedoCommand",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Check if a value is a `RedoCommand` object."
+							},
+							"parameters": [
+								{
+									"id": 12,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "value",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"name": "RedoCommand"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-command.ts",
+							"line": 28,
+							"character": 15
+						}
+					]
+				},
+				{
+					"id": 13,
+					"name": "isUndoCommand",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 14,
+							"name": "isUndoCommand",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Check if a value is an `UndoCommand` object."
+							},
+							"parameters": [
+								{
+									"id": 15,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "value",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"name": "UndoCommand"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-command.ts",
+							"line": 36,
+							"character": 15
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						7,
+						10,
+						13
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-command.ts",
+					"line": 13,
+					"character": 27
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		},
+		{
+			"id": 60,
+			"name": "HistoryEditor",
+			"kind": 2097152,
+			"kindString": "Object literal",
+			"flags": {
+				"isExported": true,
+				"isConst": true
+			},
+			"children": [
+				{
+					"id": 61,
+					"name": "isHistoryEditor",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 62,
+							"name": "isHistoryEditor",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Check if a value is a `HistoryEditor` object."
+							},
+							"parameters": [
+								{
+									"id": 63,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "predicate",
+								"name": "value",
+								"asserts": false,
+								"targetType": {
+									"type": "reference",
+									"name": "HistoryEditor"
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-editor.ts",
+							"line": 25,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 64,
+					"name": "isMerging",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 65,
+							"name": "isMerging",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Get the merge flag's current value."
+							},
+							"parameters": [
+								{
+									"id": 66,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Editor"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-editor.ts",
+							"line": 33,
+							"character": 11
+						}
+					]
+				},
+				{
+					"id": 67,
+					"name": "isSaving",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 68,
+							"name": "isSaving",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Get the saving flag's current value."
+							},
+							"parameters": [
+								{
+									"id": 69,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Editor"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-editor.ts",
+							"line": 41,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 70,
+					"name": "withoutMerging",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 71,
+							"name": "withoutMerging",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Apply a series of changes inside a synchronous `fn`, without merging any of\nthe new operations into previous save point in the history."
+							},
+							"parameters": [
+								{
+									"id": 72,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Editor"
+									}
+								},
+								{
+									"id": 73,
+									"name": "fn",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 74,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"signatures": [
+												{
+													"id": 75,
+													"name": "__call",
+													"kind": 4096,
+													"kindString": "Call signature",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											],
+											"sources": [
+												{
+													"fileName": "slate-history/src/history-editor.ts",
+													"line": 50,
+													"character": 36
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-editor.ts",
+							"line": 50,
+							"character": 16
+						}
+					]
+				},
+				{
+					"id": 76,
+					"name": "withoutSaving",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 77,
+							"name": "withoutSaving",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Apply a series of changes inside a synchronous `fn`, without saving any of\ntheir operations into the history."
+							},
+							"parameters": [
+								{
+									"id": 78,
+									"name": "editor",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "Editor"
+									}
+								},
+								{
+									"id": 79,
+									"name": "fn",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 80,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"signatures": [
+												{
+													"id": 81,
+													"name": "__call",
+													"kind": 4096,
+													"kindString": "Call signature",
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											],
+											"sources": [
+												{
+													"fileName": "slate-history/src/history-editor.ts",
+													"line": 62,
+													"character": 35
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "slate-history/src/history-editor.ts",
+							"line": 62,
+							"character": 15
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						61,
+						64,
+						67,
+						70,
+						76
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "slate-history/src/history-editor.ts",
+					"line": 20,
+					"character": 26
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "object"
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				16,
+				23,
+				1,
+				3
+			]
+		},
+		{
+			"title": "Type aliases",
+			"kind": 4194304,
+			"children": [
+				5
+			]
+		},
+		{
+			"title": "Variables",
+			"kind": 32,
+			"children": [
+				57,
+				59,
+				58
+			]
+		},
+		{
+			"title": "Functions",
+			"kind": 64,
+			"children": [
+				82
+			]
+		},
+		{
+			"title": "Object literals",
+			"kind": 2097152,
+			"children": [
+				19,
+				6,
+				60
+			]
+		}
+	]
+}

@@ -14,6 +14,9 @@
     "dist/",
     "lib/"
   ],
+  "scripts": {
+    "generate:typedoc": "typedoc --options typedoc.js"
+  },
   "dependencies": {
     "@types/debounce": "^1.2.0",
     "@types/debug": "^4.1.5",
