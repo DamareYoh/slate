@@ -86,6 +86,7 @@
     "slate-react": "^0.50.0",
     "slate-schema": "^0.50.0",
     "typedoc": "^0.15.3",
+    "typedoc-plugin-markdown": "^2.2.13",
     "typescript": "^3.7.2"
   }
 }

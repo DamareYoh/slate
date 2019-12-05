@@ -27,3 +27,10 @@
 - [Contributing](../Contributing.md)
 - [Changelog](./general/changelog.md)
 - [FAQ](./general/faq.md)
+
+## API Reference
+- [Slate](./api/slate/globals.md)
+- [Slate History](./api/slate-history/globals.md)
+- [Slate Hyperscript](./api/slate-hyperscript/globals.md)
+- [Slate React](./api/slate-react/globals.md)
+- [Slate Schema](./api/slate-schema/globals.md)

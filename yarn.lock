@@ -10369,6 +10369,14 @@ typedoc-default-themes@^0.6.1:
     lunr "^2.3.8"
     underscore "^1.9.1"
 
+typedoc-plugin-markdown@^2.2.13:
+  version "2.2.13"
+  resolved "https://registry.yarnpkg.com/typedoc-plugin-markdown/-/typedoc-plugin-markdown-2.2.13.tgz#28fe5f5cacae893cc71f340996ee14e641c0c48f"
+  integrity sha512-yGBLitXHqVMsC1jF/rKcLKLbYzGo7ewGZ7zXjcupkYnc3ymHmarY1qe3Mpeml+caUcanLzGg5fjTDkpvS08CrQ==
+  dependencies:
+    fs-extra "^8.1.0"
+    handlebars "^4.5.3"
+
 typedoc@^0.15.3:
   version "0.15.3"
   resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.15.3.tgz#8f5a038cfc1160f70cbc57e37908653483dca689"
